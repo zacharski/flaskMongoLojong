@@ -1,0 +1,13 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<table>
+{% for entry in results %}
+<tr><td>{{entry['day']}}</td><td>{{entry['user_agent']}}
+{% endfor %}
+
+  </table>
+        
+{% endblock %}
